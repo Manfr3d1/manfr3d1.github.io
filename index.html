@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manfredi Tocci</title>
+<meta name="description" content="Il sito di Manfredi Tocci. Per ora ci sono le sue avventure da coordinatore di Avventure nel Mondo.">
+<!-- fuori da Google finché non c'è il sito personale -->
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23ffd60a'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:dark light;
+  --sfondo:#000;
+  --scheda:#1c1c1e;
+  --testo:#fff;
+  --testo-2:rgba(235,235,245,.64);
+  --giallo:#ffd60a;
+  --blu:#0a84ff;
+  --tinta:rgba(255,255,255,.12);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-titoli:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --ease-out:cubic-bezier(.23,1,.32,1);
+}
+@media (prefers-color-scheme:light){
+  :root{--sfondo:#f2f2f7;--scheda:#fff;--testo:#000;--testo-2:rgba(60,60,67,.74);--giallo:#ffcc00;--blu:#0063cc;--tinta:rgba(0,0,0,.06)}
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--sfondo)}
+body{min-height:100vh;min-height:100svh;display:grid;align-content:center;background:var(--sfondo);color:var(--testo);font:400 17px/1.47 var(--font);letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+::selection{background:var(--giallo);color:#000}
+:focus-visible{outline:3px solid var(--blu);outline-offset:3px;border-radius:8px}
+a{color:inherit;text-decoration:none}
+.radice{width:100%;max-width:520px;margin:0 auto;padding:40px 20px calc(40px + env(safe-area-inset-bottom))}
+h1{font:800 clamp(38px,11vw,56px)/1.02 var(--font-titoli);letter-spacing:-.03em}
+.riga{margin-top:10px;color:var(--testo-2)}
+.porta{display:flex;align-items:center;gap:14px;margin-top:28px;min-height:76px;padding:14px;background:var(--scheda);border-radius:18px;-webkit-tap-highlight-color:transparent;transition:transform .16s var(--ease-out)}
+.porta:active{transform:scale(.985)}
+.porta-icona{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--giallo);color:#000}
+.porta-icona svg{width:24px;height:24px}
+.porta .testi{flex:1;min-width:0}
+.porta b{display:block;font-weight:600;font-size:17px}
+.porta small{display:block;font-size:14px;line-height:1.35;color:var(--testo-2)}
+.porta-cta{flex:none;display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:999px;background:var(--tinta);font:600 14px/1 var(--font)}
+</style>
+</head>
+<body>
+<main class="radice">
+  <h1>Manfredi Tocci</h1>
+  <p class="riga">Il sito è in arrivo. Intanto ci sono le mie avventure.</p>
+  <a class="porta" href="/avventure/">
+    <span class="porta-icona"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.1 4.9-4.9 2.1 2.1-4.9 4.9-2.1Z"/></svg></span>
+    <span class="testi"><b>Avventure</b><small>I miei viaggi con Avventure nel Mondo e le prossime partenze</small></span>
+    <span class="porta-cta">Entra</span>
+  </a>
+</main>
+</body>
+</html>
